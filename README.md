@@ -2,9 +2,13 @@
 
 ## Overview
 
-This repository contains the Python code and simulated datasets used in the following research presented at the 33rd International Congress of Actuaries (ICA2026).
+This repository provides the Python code and simulated datasets accompanying the following research.
 
 **Interpretable Machine Learning as an Exploratory Data Analysis Tool: An Application to Post-Pricing Validation of Japanese Private Health Insurance Products**
+
+*Maruyama et al. (2026)*
+
+(See the Reference section for the full citation.)
 
 This study demonstrates how Interpretable Machine Learning (IML) can be used as an Exploratory Data Analysis (EDA) tool to complement traditional Actual-to-Expected (A/E) analysis in post-pricing validation of private health insurance products.
 
@@ -24,11 +28,9 @@ Two analytical cases are presented, using datasets with different levels of gran
 │   ├── Case2.ipynb
 │   └── inforce_policies_aggregated_0.5.0.zip
 │
-├── reference/
-│   └── generate_simulated_data.ipynb
-│
-└── doc/
-    └── Interpretable Machine Learning as an Exploratory Data Analysis Tool.pdf
+└── reference/
+    └── generate_simulated_data.ipynb
+
 ```
 
 ## Analytical Cases
@@ -75,8 +77,6 @@ LightGBM is used to predict the A/E ratio.
 
 The model is trained using expected-amount-weighted squared-error loss (WLS) and Poisson deviance loss. The WLS model is used as the primary model for the IML analyses.
 
-For further details on the modeling framework and analytical results, please refer to the research paper in the `doc/` directory.
-
 ## How to Run
 
 ### Case 1
@@ -109,11 +109,11 @@ The simulated data do not reproduce the actual portfolio characteristics or inte
 
 ## Reference
 
-**Research Paper:**
+Maruyama, K., Kozuma, R., Asashiba, R., Murakami, K., Asai, M., & Iwasawa, H. (2026).
 
-*Interpretable Machine Learning as an Exploratory Data Analysis Tool: An Application to Post-Pricing Validation of Japanese Private Health Insurance Products*
+*Interpretable Machine Learning as an Exploratory Data Analysis Tool: An Application to Post-Pricing Validation of Japanese Private Health Insurance Products.*
 
-The full paper is available in the [`doc/`](doc/) directory.
+33rd International Congress of Actuaries (ICA2026).
 
 ## Disclaimer
 
